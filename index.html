@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/master.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Open+Sans:wght@300;400;500;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    />
+  </head>
+  <body>
+    <!-- <script src="js/main.js" defer></script>   -->
+    <div class="contaner">
+      <header>
+        <h1>CRUDS</h1>
+        <p>CREATE READ UPDATE DELETE SEARCH</p>
+        <input
+          type="text"
+          name="title"
+          id="title"
+          placeholder="Title"
+          onkeyup="totals()"
+        />
+        <div id="box">
+          <input
+            type="text"
+            name="price"
+            id="price"
+            placeholder="Price"
+            onkeyup="totals()"
+          />
+          <input
+            type="text"
+            name="texes"
+            id="texes"
+            placeholder="Texes"
+            onkeyup="totals()"
+          />
+          <input
+            type="text"
+            name="ads"
+            id="ads"
+            placeholder="Ads"
+            onkeyup="totals()"
+          />
+          <input
+            type="text"
+            name="discount"
+            id="discount"
+            placeholder="Discount"
+            onkeyup="totals()"
+          />
+          <small id="total">Total:<span></span> </small>
+        </div>
+        <input
+          type="text"
+          name="Count"
+          id="Count"
+          placeholder="Count"
+          onkeyup="totals()"
+        />
+        <input
+          type="text"
+          name="Catigory"
+          id="catigory"
+          placeholder="Catigory"
+          onkeyup="totals()"
+        />
+        <button id="creat" type="submit">Create</button>
+        <input
+          type="search"
+          name="serch"
+          id="serch"
+          placeholder="Serching By Title"
+          onkeyup="serchByy()"
+        />
+        <div id="box2">
+          <button id="serchtitle" type="button">Serch By Title</button>
+          <button id="serchcategory" type="button">Serch By Category</button>
+        </div>
+        <div id="del"></div>
+      </header>
+      <main>
+        <table id="table">
+          <tr>
+            <th>ID</th>
+            <th>TITLE</th>
+            <th>PRICE</th>
+            <th>TEXES</th>
+            <th>ADS</th>
+            <th>DISCOUNT</th>
+            <th>Total</th>
+            <th>Category</th>
+            <th>UPDATE</th>
+            <th>DELETE</th>
+          </tr>
+          <tbody id="tbody"></tbody>
+        </table>
+      </main>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
